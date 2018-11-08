@@ -1,0 +1,23 @@
+{% set version = "2018.08.04" %}
+
+package:
+  name: rsat
+  version: {{ version }}
+
+source:
+  url: http://pedagogix-tagc.univ-mrs.fr/download_rsat/rsat_2018-08-04.tar.gz
+
+channels:
+  - rsat
+  - bioconda
+
+requirements:
+  run:
+    - python        >=2.7,<3
+    - perl          >=5.10,<6
+    - r-essentials  >=3.5,<3.6
+
+
+about:
+  home: http://rsat.eu
+
