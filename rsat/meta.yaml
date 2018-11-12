@@ -14,10 +14,35 @@ channels:
 requirements:
   run:
     - python        >=2.7,<3
-    - perl          >=5.10,<6
     - r-base  >=3.5,<3.6
+
+#     PERL dependencies
+    - perl          >=5.10,<6
+    - perl-yaml
+    - perl-cgi
+    - perl-statistics-distributions
+    - perl-math-cdf
+    - perl-algorithm-cluster
+    - perl-file-spec
+    - perl-posix
+    - perl-data-dumper
+    - perl-digest-md5-file
+    - perl-io-all
+    - perl-object-insideout
+    - perl-class-std-fast
+    - perl-gd
+    - perl-dbi
+    - perl-dbd-mysql
+    - perl-db-file
+    - perl-lwp-simple
+    - perl-json
+    - perl-xml-libxml
+    - perl-xml-dom
+    - perl-log-log4perl
+    - perl-number-format
+    - perl-ole-storage_lite
+    - perl-readonly
 
 
 about:
   home: http://rsat.eu
-
