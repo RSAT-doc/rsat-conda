@@ -16,6 +16,13 @@ requirements:
   run:
     ## Python dependencies
     - python        >=2.7,<3
+    - numpy
+    - scipy
+    - matplotlib
+    - httplib2
+    - pygraphviz
+    - snakemake
+
 
     ## R dependencies
     - r-base  >=3.3,<3.6

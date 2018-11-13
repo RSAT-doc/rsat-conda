@@ -1,7 +1,6 @@
 
-Module::Build::Compat -
 
-
+## Tricky to package!
 XML::LibXML::Simple +
 XML::Parser::Expat +
 XML::Compile +
@@ -11,12 +10,16 @@ XML::Compile::WSDL11 +
 XML::Compile::Transport::SOAPHTTP +
 
 SOAP::WSDL +
-
 Bio::Das +
+
+## Not used (directly at least)
+Module::Build::Compat -
 Template::Plugin::Number::Format +
 
-# SERVER ONLY
+
+## SERVER ONLY
 Email::Sender::Transport::SMTPS *
 Email::Sender *
 Email::Simple *
 Email::Simple::Creator *
+s

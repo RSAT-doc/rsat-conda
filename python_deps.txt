@@ -1,39 +1,16 @@
-# Python 2
-
-numpy
-scipy
-matplotlib
-suds
-soappy
-fisher
-httplib2
-pygraphviz
-
-## optional: an utility to measure internet bandwidth
-speedtest-cli
-
-
-# Python 3
-
-numpy
-scipy
-matplotlib
+## TODO
 suds
 
-fisher
-snakemake
 
-py2        # Fails on the IFB cloud
-pygraphviz # Fails
-
-## Failures: no distributions at all found
-wsdl
-wstools
-
-
-## possible future dependencies? 
+## possible future dependencies?
 suds-jurko
 pysimplesoap
 soappy
 
 
+## Unused?
+fisher
+speedtest-cli
+py2        # Fails on the IFB cloud
+wsdl
+wstools
