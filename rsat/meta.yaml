@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: http://pedagogix-tagc.univ-mrs.fr/download_rsat/rsat_{{ version }}.tar.gz
+#  url: http://pedagogix-tagc.univ-mrs.fr/download_rsat/rsat_{{ version }}.tar.gz
 
 channels:
   - conda-forge
@@ -18,7 +18,7 @@ requirements:
     - python        >=2.7,<3
 
     ## R dependencies
-    - r-base  >=3.5,<3.6
+    - r-base  >=3.3,<3.6
     - r-gplots
     - r-jpeg
     - r-png

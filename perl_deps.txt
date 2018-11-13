@@ -2,8 +2,6 @@
 Module::Build::Compat -
 
 
-Util::Properties +
-
 XML::LibXML::Simple +
 XML::Parser::Expat +
 XML::Compile +
