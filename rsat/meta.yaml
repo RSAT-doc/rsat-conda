@@ -67,6 +67,7 @@ requirements:
     - perl-http-tiny
     - perl-lockfile-simple
     - perl-postscript-simple
+    - perl-util-properties
  
 
 
