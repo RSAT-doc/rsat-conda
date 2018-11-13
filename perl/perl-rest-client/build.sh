@@ -18,13 +18,3 @@ else
     exit 1
 fi
 
-# Add more build steps here, if they are necessary.
-
-# See
-# http://docs.continuum.io/conda/build.html
-# for a list of environment variables that are set during the build process.
-
-# FIXME: dirty hack to work around the perl version folder
-mv $PREFIX/lib/site_perl/5.26.0 $PREFIX/lib/site_perl/5.26.2
-mv $PREFIX/lib/5.26.0 $PREFIX/lib/5.26.2
-

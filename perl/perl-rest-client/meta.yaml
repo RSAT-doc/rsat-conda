@@ -18,7 +18,7 @@ build:
 
 requirements:
   build:
-    - perl
+    - perl 5.26.2 # TODO: remove pinned version
     - perl-extutils-makemaker
     - perl-uri
     - perl-lwp-protocol-https

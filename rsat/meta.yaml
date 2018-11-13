@@ -45,6 +45,11 @@ requirements:
     - perl-number-format
     - perl-ole-storage_lite
     - perl-readonly
+    - perl-rest-client
+    - perl-http-tiny
+    - perl-lockfile-simple
+ 
+
 
 
 about:
