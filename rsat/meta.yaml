@@ -36,6 +36,7 @@ requirements:
 
 #     PERL dependencies
     - perl          >=5.10,<6
+    - perl-bioperl
     - perl-yaml
     - perl-cgi
     - perl-statistics-distributions
@@ -54,6 +55,7 @@ requirements:
     - perl-db-file
     - perl-lwp-simple
     - perl-json
+    - perl-soap-lite
     - perl-xml-libxml
     - perl-xml-dom
     - perl-log-log4perl

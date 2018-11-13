@@ -23,3 +23,4 @@ Number::Format perl-number-format
 OLE::Storage_Lite  perl-ole-storage_lite
 Readonly perl-readonly
 Spreadsheet::WriteExcel perl-spreadsheet-writeexcel
+Bio::Perl perl-bioperl

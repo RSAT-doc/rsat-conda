@@ -1,14 +1,5 @@
 
-Spreadsheet::WriteExcel::Big ?
-
-Bio::Perl perl-bioperl ?
-
 Module::Build::Compat -
-
-Email::Sender::Transport::SMTPS *
-Email::Sender *
-Email::Simple *
-Email::Simple::Creator *
 
 
 Util::Properties +
@@ -21,10 +12,13 @@ XML::Compile::SOAP11 +
 XML::Compile::WSDL11 +
 XML::Compile::Transport::SOAPHTTP +
 
-SOAP::Lite perl-soap-lite
-SOAP::Packager +
-SOAP::Transport::HTTP +
 SOAP::WSDL +
 
 Bio::Das +
 Template::Plugin::Number::Format +
+
+# SERVER ONLY
+Email::Sender::Transport::SMTPS *
+Email::Sender *
+Email::Simple *
+Email::Simple::Creator *
