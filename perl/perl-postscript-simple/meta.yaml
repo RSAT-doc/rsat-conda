@@ -1,0 +1,46 @@
+{% set name = "perl-postscript-simple" %}
+{% set version = "0.09" %}
+{% set sha256 = "cf5bbe06e4c097ad7fe085b237831b43f5edde7ddb1cd21fc997c42756ab1856" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  fn: PostScript-Simple-0.09.tar.gz
+  url: https://cpan.metacpan.org/authors/id/M/MC/MCNEWTON/PostScript-Simple-0.09.tar.gz
+  sha256: {{ sha256 }}
+
+# If this is a new build for the same version, increment the build
+# number. If you do not include this key, it defaults to 0.
+build:
+  number: 0
+
+requirements:
+  build:
+    - perl 5.26.2 # to remove
+    - perl-extutils-makemaker
+    #- perl-test-more
+
+  run:
+    - perl
+    #- perl-test-more
+
+test:
+  # Perl 'use' tests
+  imports:
+    - PostScript::Simple
+    #- PostScript::Simple::EPS #the version specified in this script is wrong
+    # we have 0.02 instead of 0.09
+
+  # You can also put a file called run_test.pl (or run_test.py) in the recipe
+  # that will be run at test time.
+
+about:
+  home: http://metacpan.org/pod/PostScript::Simple
+  license: unknown
+  summary: 'Produce PostScript files from Perl'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

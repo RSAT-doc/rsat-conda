@@ -1,0 +1,72 @@
+{% set name = "perl-http-tiny" %}
+{% set version = "0.076" %}
+{% set sha256 = "ddbdaa2fb511339fa621a80021bf1b9733fddafc4fe0245f26c8b92171ef9387" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  fn: HTTP-Tiny-0.076.tar.gz
+  url: https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/HTTP-Tiny-0.076.tar.gz
+  sha256: {{ sha256 }}
+
+# If this is a new build for the same version, increment the build
+# number. If you do not include this key, it defaults to 0.
+build:
+  number: 0
+
+requirements:
+  build:
+    - perl 5.26.2 # to remove
+    - perl-exporter
+    - perl-time-local
+    - perl-carp
+    - perl-lib
+    - perl-file-temp
+    - perl-socket
+    - perl-ipc-cmd
+    - perl-mime-base64
+    - perl-data-dumper
+    - perl-extutils-makemaker
+    #- perl-fcntl
+    #- perl-strict
+    #- perl-open
+    #- perl-warnings
+    #- perl-io-socket-inet
+    #- perl-file-basename
+    #- perl-io-socket
+    #- perl-file-spec
+    #- perl-test-more
+    #- perl-bytes
+    #- perl-io-dir
+    #- perl-io-file
+
+  run:
+    - perl
+    - perl-socket
+    - perl-time-local
+    - perl-mime-base64
+    - perl-carp
+    #- perl-fcntl
+    #- perl-strict
+    #- perl-warnings
+    #- perl-io-socket
+    #- perl-bytes
+
+test:
+  # Perl 'use' tests
+  imports:
+    - HTTP::Tiny
+
+  # You can also put a file called run_test.pl (or run_test.py) in the recipe
+  # that will be run at test time.
+
+about:
+  home: https://github.com/chansen/p5-http-tiny
+  license: perl_5
+  summary: 'A small, simple, correct HTTP/1.1 client'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
