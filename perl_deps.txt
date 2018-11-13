@@ -10,12 +10,6 @@ Email::Sender *
 Email::Simple *
 Email::Simple::Creator *
 
-REST::Client    HACK
-LockFile::Simple  HACK
-
-HTTP::Tiny DONE
-
-PostScript::Simple +
 
 Util::Properties +
 
