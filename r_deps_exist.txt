@@ -1,0 +1,23 @@
+r-gplots
+r-jpeg
+r-png
+r-devtools
+r-ggplot2
+r-dynamictreecut
+r-reshape2
+r-dendextend
+r-gridextra
+r-egg
+r-flux
+r-zoo
+r-rcolorbrewer
+bioconductor-ctc
+r-amap
+bioconductor-qvalue
+#  r-rcpp
+#  r-rcppeigen
+#  Rclusterpp
+
+
+
+

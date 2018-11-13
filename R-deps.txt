@@ -1,29 +1,4 @@
-devtools
 RJSONIO
-gplots
-jpeg
-png
-dynamicTreeCut
-ggplot2
-reshape2
-dendextend
-gridExtra
 grid
-egg
-flux
-zoo
-RColorBrewer
-
-#  Rcpp
-#  RcppEigen
-#  Rclusterpp
-
-
-## List of required packages from Bioconductor
-ctc
-amap
-qvalue
-
 ## List of RSAT-specific packages to be compiled on the server
 TFBMclust
-
