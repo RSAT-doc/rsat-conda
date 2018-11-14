@@ -88,6 +88,9 @@ requirements:
     - ghostscript
     - gnuplot
 
+    ## For the web server only?
+    #- perl-email-simple
+
 about:
   home: http://rsat.eu
   license: GPL Affero
