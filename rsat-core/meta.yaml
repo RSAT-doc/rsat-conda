@@ -4,8 +4,11 @@ package:
   name: rsat-core
   version: {{ version }}
 
+build:
+  number: 1
+
 source:
-#  url: http://pedagogix-tagc.univ-mrs.fr/download_rsat/rsat_{{ version }}.tar.gz
+  url: http://pedagogix-tagc.univ-mrs.fr/download_rsat/rsat_{{ version }}.tar.gz
 
 channels:
   - conda-forge
@@ -13,6 +16,12 @@ channels:
   - rsat
 
 requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - {{ compiler('fortran') }}
+    - make
+
   run:
     ## Python dependencies
     - python
