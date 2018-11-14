@@ -1,18 +1,17 @@
 
-
 ## Tricky to package!
-XML::LibXML::Simple +
-XML::Parser::Expat +
 XML::Compile +
 XML::Compile::Cache +
 XML::Compile::SOAP11 +
 XML::Compile::WSDL11 +
 XML::Compile::Transport::SOAPHTTP +
 
+## Would need a "perl_mod" package for Apache2::RequestIO
 SOAP::WSDL +
-Bio::Das +
 
 ## Not used (directly at least)
+XML::LibXML::Simple +
+XML::Parser::Expat +
 Module::Build::Compat -
 Template::Plugin::Number::Format +
 
@@ -22,4 +21,4 @@ Email::Sender::Transport::SMTPS *
 Email::Sender *
 Email::Simple *
 Email::Simple::Creator *
-s
+

@@ -46,6 +46,7 @@ requirements:
     ##  PERL dependencies
     - perl          >=5.10,<6
     - perl-bioperl
+    - perl-bio-das
     - perl-yaml
     - perl-cgi
     - perl-statistics-distributions
@@ -67,6 +68,7 @@ requirements:
     - perl-soap-lite
     - perl-xml-libxml
     - perl-xml-dom
+    - perl-xml-parser
     - perl-log-log4perl
     - perl-number-format
     - perl-ole-storage_lite
