@@ -1,0 +1,23 @@
+{% set version = "41" %}
+
+package:
+  name: perl-ensembl-genomes
+  version: {{ version }}
+
+source:
+        git_url: https://github.com/EnsemblGenomes/ensemblgenomes-api.git
+        git_tag: release/eg/{{ version }}
+
+channels:
+  - conda-forge
+  - bioconda
+  - rsat
+
+requirements:
+  run:
+    - perl          >=5.10,<6
+    - perl-list-moreutils
+
+about:
+  home: https://www.ensembl.org/info/docs/api/index.html
+

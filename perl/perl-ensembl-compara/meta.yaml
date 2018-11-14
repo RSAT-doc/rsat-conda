@@ -1,0 +1,22 @@
+{% set version = "94" %}
+
+package:
+  name: perl-ensembl-compara
+  version: {{ version }}
+
+source:
+        git_url: https://github.com/Ensembl/ensembl-compara.git
+        git_tag: release/{{ version }}
+
+channels:
+  - conda-forge
+  - bioconda
+  - rsat
+
+requirements:
+  run:
+    - perl          >=5.10,<6
+    - perl-ensembl-core {{ version }}
+
+about:
+  home: https://www.ensembl.org/info/docs/api/index.html

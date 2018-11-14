@@ -15,7 +15,7 @@ channels:
 requirements:
   run:
     ## Python dependencies
-    - python        >=2.7,<3
+    - python
     - numpy
     - scipy
     - matplotlib
@@ -79,6 +79,8 @@ requirements:
     - perl-lockfile-simple
     - perl-postscript-simple
     - perl-util-properties
+    - perl-ensemble-api
+    - perl-ensemble-genomes
 
     ## Stand-alone tools
     - weblogo

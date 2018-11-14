@@ -1,0 +1,20 @@
+{% set version = "94" %}
+
+package:
+  name: perl-ensembl-api
+  version: {{ version }}
+
+channels:
+  - conda-forge
+  - bioconda
+  - rsat
+
+requirements:
+  run:
+    - perl-ensembl-compara {{ version }}
+    - perl-ensembl-funcgen {{ version }}
+    - perl-ensembl-io {{ version }}
+    - perl-ensembl-variation {{ version }}
+
+about:
+  home: https://www.ensembl.org/info/docs/api/index.html
