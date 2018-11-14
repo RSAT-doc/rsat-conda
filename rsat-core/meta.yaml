@@ -79,8 +79,8 @@ requirements:
     - perl-lockfile-simple
     - perl-postscript-simple
     - perl-util-properties
-    - perl-ensemble-api
-    - perl-ensemble-genomes
+    - perl-ensembl-api
+    - perl-ensembl-genomes
 
     ## Stand-alone tools
     - weblogo
