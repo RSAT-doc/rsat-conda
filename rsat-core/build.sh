@@ -11,9 +11,11 @@ cp -a perl-scripts python-scripts "$RSAT_DEST"
 cd contrib
 for dbin in *
 do
-	cd "$dbin"
-	make clean && make && cp "$dbin" "$PREFIX/bin"
-	cd ..
+    if [ -d "$dbin" ]; then
+        cd "$dbin"
+        make clean && make CC=$CC CXX=$CXX && cp "$dbin" "$PREFIX/bin"
+        cd ..
+    fi
 done
 
 
