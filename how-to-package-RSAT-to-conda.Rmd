@@ -22,7 +22,7 @@ conda install anaconda-client
 
 ## Building conda packages on the local machine
 
-Attention, `conda build` must run in the default conda environment ("base" environment, which is opened with the command `source activate` with no argument), and not in a customized environment.
+Attention, `conda build` must run in the default conda environment ("base" environment, which is opened with the command   `source activate` with no argument), and not in a customized environment.
 
 ```
 git clone https://github.com/RSAT-doc/rsat-conda.git
