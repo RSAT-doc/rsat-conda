@@ -1,13 +1,7 @@
----
-title: "How to package RSAT for conda"
-author: "Jacques van Helden"
-date: "12/13/2018"
-output: html_document
----
+# How to package RSAT for conda
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+**author: Jacques van Helden**
+Creation: "12/13/2018"
 
 # Requirements
 
@@ -60,7 +54,7 @@ done
 
 ## Updating the RSAT version
 
-- Open a connection to the RSAT distribution site: <http://download.rsat.eu/>
+- Open a connection to the RSAT distribution site: [http://download.rsat.eu/](http://download.rsat.eu/)
 
 - Note the date of the latest version of the tar archive (e.g. `2018.12.13` for the archive `rsat_2018.12.13.tar.gz`)
 
