@@ -1,7 +1,7 @@
 # How to package RSAT for conda
 
-**author: Jacques van Helden**
-Creation: "12/13/2018"
+- Author: **Jacques van Helden**
+- Date: Dec 13, 2018
 
 # Requirements
 
