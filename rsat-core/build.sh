@@ -4,7 +4,7 @@
 RSAT_DEST="$PREFIX/opt/rsat/"
 mkdir -p "$RSAT_DEST"
 
-cp -a perl-scripts python-scripts makefiles "$RSAT_DEST"
+cp -a perl-scripts python-scripts makefiles rsat "$RSAT_DEST"
 
 
 # Build and dispatch compiled binaries
