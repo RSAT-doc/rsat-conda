@@ -8,7 +8,7 @@ build:
   number: 1
 
 source:
-  url: http://pedagogix-tagc.univ-mrs.fr/download_rsat/rsat_{{ version }}.tar.gz
+  url: http://pedagogix-tagc.univ-mrs.fr/download_rsat/rsat-core_{{ version }}.tar.gz
 
 # channels:
 #   - conda-forge

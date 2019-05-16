@@ -80,7 +80,7 @@ conda  build -c conda-forge -c bioconda -c rsat  rsat-core
 Upload :
 
 ```
-anaconda upload -u rsat XXXX (see output of the build)
+anaconda upload -u rsat XXXX ## replace XXXX by the info displayed in the output of the build
 ```
 
 # Installing RSAT with conda
@@ -107,7 +107,7 @@ conda env list | grep rsat
 Activate conda rsat environment
 
 ```
-source activate rsat
+conda activate rsat
 ```
 
 Install rsat-core in the conda rsat environment
@@ -119,14 +119,16 @@ conda install -c conda-forge -c bioconda -c rsat  rsat-core
 Deactivate conda rsat environment
 
 ```
-source deactivate rsat
+conda deactivate rsat
 ```
 
 # Updating the RSAT conda package
 
 ```
-source activate rsat
+conda activate rsat
 conda update rsat-core
 ```
+
+
 
 
