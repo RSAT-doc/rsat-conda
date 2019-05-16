@@ -9,9 +9,9 @@
 
 
 ```
-conda install anaconda
-conda install conda-build
-conda install anaconda-client
+conda activate # Activate the default conda environment before proceeding to the packaging
+
+conda install anaconda conda-build anaconda-client
 ```
 
 ## Building conda packages on the local machine
@@ -19,10 +19,8 @@ conda install anaconda-client
 Attention, `conda build` must run in the default conda environment ("base" environment, which is opened with the command   `source activate` with no argument), and not in a customized environment.
 
 ```
-git clone https://github.com/RSAT-doc/rsat-conda.git
+git clone git@github.com:RSAT-doc/rsat-conda.git
 cd rsat-conda
-cd ~/rsat-doc/rsat-conda
-source activate
 ```
 
 ## Building and uploading packages for the dependencies
@@ -32,11 +30,16 @@ Before building the rsat-core package, each of its dependencies has to be built 
 
 ### Command to build a conda package
 
+This is the general command to build a conda package. We ionclude the channels in the command itself.
+We will call this command below with different receipes directories, in order to build the packages for RSAT dependencies and, once they are all done, for the RSAT package itself. 
+
 ```
 conda build  -c conda-forge -c bioconda -c rsat [path_to_the_recipes_dir]
 ```
 
 ### Command to upload a package to anaconda
+
+After having built the package, we will upload it to the anaonda server.
 
 ```
 anaconda upload -u rsat XXXX (see output of the build)
@@ -46,6 +49,8 @@ anaconda upload -u rsat XXXX (see output of the build)
 
 ```
 PERL_DIRS=`ls -1d perl/*`
+echo "Packaging perl dependencies"
+echo "${PERL_DIRS}"
 for p in ${PERL_DIRS}; do \
   echo "Packaging $p"; \
   conda build  -c conda-forge -c bioconda -c rsat $p >& $p/build_log.txt ; \
@@ -61,7 +66,7 @@ done
 - With a text editor, open the file [rsat-core/meta.yaml](rsat-core/meta.yaml) and change the version on the first line.
 
 ```
-{% set version = "2018.12.13" %}
+{% set version = "2019.05.16" %}
 ```
 
 ## Building and uploading rsat
