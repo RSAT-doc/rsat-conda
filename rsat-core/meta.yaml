@@ -1,4 +1,4 @@
-{% set version = "2018.12.13" %}
+{% set version = "2019.05.16" %}
 
 package:
   name: rsat-core
@@ -98,6 +98,7 @@ requirements:
     - blast
     - ghostscript
     - gnuplot
+    - vmatch
 
     ## For the web server only?
     #- perl-email-simple
