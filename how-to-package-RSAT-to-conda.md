@@ -18,10 +18,24 @@ conda install anaconda conda-build anaconda-client
 
 Attention, `conda build` must run in the default conda environment ("base" environment, which is opened with the command   `source activate` with no argument), and not in a customized environment.
 
+If you are member of the RSAT development team on github, you can clone the rsat-conda repository with the git access.
+
 ```
 git clone git@github.com:RSAT-doc/rsat-conda.git
+```
+
+else, you can use the https access
+
+```
+https://github.com/RSAT-doc/rsat-conda.git
+```
+
+Enter the rsat-conda directory. 
+
+```
 cd rsat-conda
 ```
+
 
 ## Building and uploading packages for the dependencies
 
@@ -66,7 +80,7 @@ done
 - With a text editor, open the file [rsat-core/meta.yaml](rsat-core/meta.yaml) and change the version on the first line.
 
 ```
-{% set version = "2019.05.16" %}
+{% set version = "2019.06.24" %}
 ```
 
 ## Building and uploading rsat
