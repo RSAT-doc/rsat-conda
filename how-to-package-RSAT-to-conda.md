@@ -75,12 +75,12 @@ done
 
 - Open a connection to the RSAT distribution site: [http://download.rsat.eu/](http://download.rsat.eu/)
 
-- Note the date of the latest version of the tar archive (e.g. `2019.06.24` for the archive `rsat_2019.06.24.tar.gz`)
+- Note the date of the latest version of the tar archive (e.g. `2019.06.26` for the archive `rsat_2019.06.26.tar.gz`)
 
 - With a text editor, open the file [rsat-core/meta.yaml](rsat-core/meta.yaml) and change the version on the first line.
 
 ```
-{% set version = "2019.06.24" %}
+{% set version = "2019.06.26" %}
 ```
 
 ## Building and uploading rsat
