@@ -6,9 +6,9 @@ mkdir -p "$RSAT_DEST"
 
 cp -a perl-scripts python-scripts makefiles rsat rsat.yaml "$RSAT_DEST"
 
-echo "#!/bin/sh" > $PREFIX/bin/rsat
-echo "../opt/rsat/rsat" >> $PREFIX/bin/rsat
-chmod 755 $PREFIX/bin/rsat
+# echo "#!/bin/sh" > $PREFIX/bin/rsat
+# echo "../opt/rsat/rsat" >> $PREFIX/bin/rsat
+# chmod 755 $PREFIX/bin/rsat
 
 ## Alternative: 
 ## - au opt: placer les scripts perl, le yaml etc dans usr/share/rsat
@@ -16,7 +16,8 @@ chmod 755 $PREFIX/bin/rsat
 
 # Build and dispatch compiled binaries
 cd contrib
-for dbin in *
+# for dbin in *
+for dbin in info-gibbs count-words matrix-scan-quick retrieve-variation-seq variation-scan 
 do
     if [ -d "$dbin" ]; then
         cd "$dbin"
