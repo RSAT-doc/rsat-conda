@@ -1,4 +1,4 @@
-{% set version = "2019.07.15" %}
+{% set version = "2019.11.22" %}
 
 package:
   name: rsat-core
@@ -10,10 +10,10 @@ build:
 source:
   url: http://pedagogix-tagc.univ-mrs.fr/download_rsat/rsat-core_{{ version }}.tar.gz
 
-# channels:
-#   - conda-forge
-#   - bioconda
-#   - rsat
+channels:
+ - conda-forge
+ - bioconda
+ - rsat
 
 requirements:
   build:
