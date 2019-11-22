@@ -4,7 +4,7 @@
 RSAT_DEST="$PREFIX/opt/rsat/"
 mkdir -p "$RSAT_DEST"
 
-cp -a perl-scripts python-scripts makefiles rsat rsat.yaml "$RSAT_DEST"
+cp -a perl-scripts python-scripts makefiles bin/rsat share/rsat/rsat.yaml "$RSAT_DEST"
 
 # echo "#!/bin/sh" > $PREFIX/bin/rsat
 # echo "../opt/rsat/rsat" >> $PREFIX/bin/rsat
