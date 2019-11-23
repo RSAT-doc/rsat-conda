@@ -1,4 +1,4 @@
-{% set version = "2019.11.22" %}
+{% set version = "2019.11.23" %}
 
 package:
   name: rsat-core
