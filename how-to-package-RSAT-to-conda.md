@@ -1,7 +1,8 @@
 # How to package RSAT for conda
 
 - Author: **Jacques van Helden**
-- Date: Dec 13, 2018
+- Creation date: 2018-12-13
+- Last update: 2019-11-23
 
 # Requirements
 
@@ -75,12 +76,12 @@ done
 
 - Open a connection to the RSAT distribution site: [http://download.rsat.eu/](http://download.rsat.eu/)
 
-- Note the date of the latest version of the tar archive (e.g. `2019.06.26` for the archive `rsat_2019.06.26.tar.gz`)
+- Note the date of the latest version of the tar archive (e.g. `2019.11.23` for the archive `rsat_2019.11.23.tar.gz`)
 
 - With a text editor, open the file [rsat-core/meta.yaml](rsat-core/meta.yaml) and change the version on the first line.
 
 ```
-{% set version = "2019.06.26" %}
+{% set version = "2019.11.23" %}
 ```
 
 ## Building and uploading rsat
@@ -135,6 +136,23 @@ Deactivate conda rsat environment
 ```
 conda deactivate rsat
 ```
+
+# Testing the RSAT commands
+
+```
+## Activate the rsat conda environment
+source activate rsat
+
+## Get the list of supported RSAT commands
+rsat -h
+
+## Get the help of a given command (e.g. random-seq)
+rsat random-seq -h
+
+## Run random-seq to generate 2 sequences of length 100 each
+rsat random-seq -n 2 -l 100
+```
+
 
 # Updating the RSAT conda package
 
