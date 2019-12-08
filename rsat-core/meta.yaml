@@ -1,4 +1,4 @@
-{% set version = "2019.11.23" %}
+{% set version = "2019.12.08" %}
 
 package:
   name: rsat-core
@@ -86,9 +86,9 @@ requirements:
     - perl-rest-client
     - perl-http-tiny
     - perl-lockfile-simple
-    - perl-postscript-simple
+#    - perl-postscript-simple
     - perl-util-properties
-    - perl-ensembl-api
+#    - perl-ensembl-api
     - perl-ensembl-genomes
 
     ## Stand-alone tools
