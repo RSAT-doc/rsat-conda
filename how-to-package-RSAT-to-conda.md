@@ -2,7 +2,7 @@
 
 - Author: **Jacques van Helden**
 - Creation date: 2018-12-13
-- Last update: 2019-11-23
+- Last update: 2022-02-24
 
 # Requirements
 
@@ -141,7 +141,7 @@ conda deactivate rsat
 
 ```
 ## Activate the rsat conda environment
-source activate rsat
+conda activate rsat
 
 ## Get the list of supported RSAT commands
 rsat -h
