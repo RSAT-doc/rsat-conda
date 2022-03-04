@@ -52,6 +52,16 @@ We will call this command below with different receipes directories, in order to
 conda build  -c conda-forge -c bioconda -c rsat [path_to_the_recipes_dir]
 ```
 
+**Warning:** this conda packaging apparently requires a quite large RAM. On the IFB core cluster, I allocate 48Gb of ram.
+
+```
+srun --mem 48Gb conda install anaconda conda-build anaconda
+```
+
+This takes several hours. 
+
+**Beware:** at the end of the compilation, conda displays a message providing an identifier that must be used for the next step. 
+
 ### Command to upload a package to anaconda
 
 After having built the package, we will upload it to the anaonda server.
