@@ -103,6 +103,9 @@ requirements:
     ## For the web server only?
     #- perl-email-simple
 
+variables:
+  RSAT: /opt/miniconda3/envs/rsat/share/rsat
+
 about:
   home: http://rsat.eu
   license: GPL Affero
