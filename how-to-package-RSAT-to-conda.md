@@ -8,11 +8,15 @@
 
 ## Conda packages
 
+**BEWARE:** The standard `conda` installations takes hours to build the dependency tree. 
+
+Thanks to Stéphane Plaisance, who provided us with an alternative (`mamba`) that impressively accelerates the installation. 
+
 
 ```
 conda activate # Activate the default conda environment before proceeding to the packaging
 
-conda install anaconda conda-build anaconda-client
+mamba install anaconda conda-build anaconda-client
 ```
 
 ## Building conda packages on the local machine
@@ -87,6 +91,11 @@ done
 ## Building the conda rsat-core package
 
 ```
+
+## FASTER ?
+mamba  build -c conda-forge -c bioconda -c rsat  rsat-core
+
+## Standard command (takes hours to build the dependency tree)
 conda  build -c conda-forge -c bioconda -c rsat  rsat-core
 ```
 
@@ -135,6 +144,7 @@ conda activate rsat
 ```
 
 Install rsat-core in the conda rsat environment
+
 
 ```
 conda install -c conda-forge -c bioconda -c rsat  rsat-core
